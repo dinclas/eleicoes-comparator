@@ -123,9 +123,15 @@ export default function Home() {
         <title>May god have mercy on this nation</title>
       </Head>
       <main className='flex flex-col min-h-screen w-screen bg-gray-50 p-4 space-y-2'>
-        <a href='https://github.com/dinclas/eleicoes-comparator' className='self-end'>
-          <img alt='Source Code' src='https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white'/>
-        </a>
+        <div className='flex w-full'>
+          <div className='w-full'>
+            <h1 className='text-2xl font-medium'>May god have mercy on this nation</h1>
+            <h2>Crescimento percentual dos candidatos entre turnos</h2>
+          </div>
+          <a href='https://github.com/dinclas/eleicoes-comparator'>
+            <img alt='Source Code' src='https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white'/>
+          </a>
+        </div>
         <div className='grid grid-cols-4 gap-4 w-full'>
           {  comparators }
         </div>
