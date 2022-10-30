@@ -122,7 +122,10 @@ export default function Home() {
       <Head>
         <title>May god have mercy on this nation</title>
       </Head>
-      <main className='flex min-h-screen w-screen bg-gray-50 p-8'>
+      <main className='flex flex-col min-h-screen w-screen bg-gray-50 p-4 space-y-2'>
+        <a href='https://github.com/dinclas/eleicoes-comparator' className='self-end'>
+          <img alt='Source Code' src='https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white'/>
+        </a>
         <div className='grid grid-cols-4 gap-4 w-full'>
           {  comparators }
         </div>
