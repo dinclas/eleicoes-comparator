@@ -119,7 +119,7 @@ export default async function handler(
 
   const candidates = secondTurnResponse.data.cand.map(candidate => candidate.nm)
   const candidatesResults = candidates.map(candidate => ({
-      candidate: candidate,
+      candidate,
       firstTurnPercentage: parseFloat(firstTurnResponse.data.cand.find(x => x.nm === candidate)?.pvap || '0'),
       secondTurnPercentage: parseFloat(secondTurnResponse.data.cand.find(x => x.nm === candidate)?.pvap || '0'),
   }))
